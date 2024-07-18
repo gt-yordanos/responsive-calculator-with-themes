@@ -96,7 +96,7 @@ body {
 
 .container {
   aspect-ratio: 0.5;
-  min-width: 300px;
+  min-width: 350px;
   min-height: 500px;
   height: 83.3%;
   display: flex;
