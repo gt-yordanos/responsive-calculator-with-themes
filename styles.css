@@ -242,7 +242,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: calc(0.1rem + 8.6vmin);
+  border-radius: calc(0.1rem + 0.6vmin);
   box-shadow:  0px 3px 0px var(--btn-shadow);
   font-size: calc(.2rem + 4vmin);
   color: var(--btn-btnlonger-color);
