@@ -1,0 +1,292 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+:root {
+  --body-bg: hsl(222, 26%, 31%);
+  --dispaly-bg: hsl(224, 36%, 15%);
+  --buttons-bg: hsl(223, 31%, 20%);
+  --btn-bg: #cdc5c5;
+  --btn-hover-bg: #fdf5f5;
+  --btn-active-bg: #ba7c9c;
+  --btn-shadow: rgb(142, 136, 136);
+  --del-reset-btn-bg: hsl(225, 21%, 49%);
+  --del-reset-btn-hover-bg: hsl(227, 22%, 64%);
+  --del-reset-btn-active-bg: hsl(224, 20%, 26%);
+  --del-reset-btn-shadow: hsl(221, 20%, 35%);
+  --equal-btn-bg: hsl(348, 93%, 43%);
+  --equal-btn-hover-bg: hsl(348, 90%, 65%);
+  --equal-btn-active-bg: hsl(348, 54%, 24%);
+  --equal-btn-shadow: hsl(348, 56%, 36%);
+  --equal-btn-color: white;
+  --circle-toggle-bg: #e62e5c;
+  --bottom-toggler-bg: hsl(223, 31%, 20%);
+  --header-color: #ffffff;
+  --btn-btnlonger-color: rgb(52, 52, 52);
+  --del-reset-btn-color: #ffffff;
+  --display-color: #ffffff;
+}
+
+.theme-2 {
+  --body-bg: hsl(0, 0%, 90%);
+  --dispaly-bg: hsl(0, 0%, 93%);
+  --buttons-bg: hsl(0, 4%, 80%);
+  --btn-bg: #e5e5e5;
+  --btn-hover-bg: #fdf5f5;
+  --btn-active-bg: #ba7c9c;
+  --btn-shadow: rgb(142, 136, 136); 
+  --del-reset-btn-bg: hsl(185, 42%, 37%);
+  --del-reset-btn-hover-bg: hsl(0, 7%, 64%);
+  --del-reset-btn-active-bg: hsl(0, 5%, 26%);
+  --del-reset-btn-shadow: hsl(185, 58%, 25%); 
+  --equal-btn-bg: hsl(25, 98%, 40%);
+  --equal-btn-hover-bg: hsl(25, 98%, 45%);
+  --equal-btn-active-bg: hsl(25, 100%, 58%);
+  --equal-btn-shadow: hsl(25, 99%, 27%);
+  --equal-btn-color: white;
+  --circle-toggle-bg: hsl(25, 98%, 40%);
+  --bottom-toggler-bg: hsl(0, 5%, 81%);
+  --header-color: #000000;
+  --btn-btnlonger-color: rgb(52, 52, 52);
+  --del-reset-btn-color: #ffffff;
+  --display-color: #000000;
+}
+
+.theme-3 {
+  --body-bg: hsl(267, 69%, 15%);
+  --dispaly-bg: hsl(268, 71%, 12%);
+  --buttons-bg: hsl(268, 71%, 12%);
+  --btn-bg: hsl(268, 47%, 21%);
+  --btn-hover-bg: hsl(266, 37%, 37%);
+  --btn-active-bg: #794961;
+  --btn-shadow: hsl(290, 70%, 36%); 
+  --del-reset-btn-bg: hsl(281, 89%, 26%);
+  --del-reset-btn-hover-bg: hsl(268, 59%, 44%);
+  --del-reset-btn-active-bg: hsl(284, 67%, 43%);
+  --del-reset-btn-shadow: hsl(285, 91%, 52%);
+  --equal-btn-bg: hsl(176, 100%, 44%);
+  --equal-btn-hover-bg: hsl(176, 61%, 54%);
+  --equal-btn-active-bg: hsl(186, 72%, 22%);
+  --equal-btn-shadow: hsl(177, 92%, 70%);
+  --equal-btn-color: black;
+  --circle-toggle-bg: hsl(176, 100%, 44%);
+  --bottom-toggler-bg: hsl(266, 76%, 6%);
+  --header-color: hsl(52, 100%, 62%);
+  --btn-btnlonger-color: hsl(52, 100%, 62%);
+  --del-reset-btn-color: #f3f3f3;
+  --display-color: hsl(52, 100%, 62%);
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: var(--body-bg);
+  font-family: 'League Spartan';
+  font-weight: 700;
+}
+
+.container {
+  aspect-ratio: 0.5;
+  min-width: 350px;
+  min-height: 500px;
+  height: 83.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3%;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.display {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--dispaly-bg);
+}
+
+.buttons {
+  width: 100%;
+  height: 70%;
+  background: var(--buttons-bg) ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: calc(.3rem + 4.5vmin);
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:  calc(.2rem + 2vmin);
+}
+
+.label {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  font-size: calc(.2rem + 2.5vmin);
+}
+
+.theme-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  height: 100%;
+  flex-basis: 60%;
+}
+
+.top-number {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: calc(.2rem + 1.5vmin);
+  font-weight: 500;
+}
+
+.top-number ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 0 15%;
+}
+
+.bottom-toggler{
+  position: relative;
+  display: flex;
+  align-items: center;
+  aspect-ratio: 2.6;
+  height: 40%;
+  background: var(--bottom-toggler-bg);
+  border-radius: 99999999999px;
+}
+
+.circle{
+  aspect-ratio: 1;
+  height: 65%;
+  background: var(--circle-toggle-bg);
+  border-radius: 50%;
+  margin-left: 6%;
+  transition: all .3s ease;
+}
+
+
+.display input{
+  width: 95%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: var(--display-color);
+  font-size: calc(1rem + 5vmin);
+  font-weight: bold;
+  text-align: right;
+}
+
+.display input:focus{
+  outline: none;
+}
+
+.button-top {
+  flex-basis: 79%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Correct grid-template-columns */
+  gap: 15px;
+  padding: 20px 20px 10px 20px;
+}
+
+.button-bottom {
+  flex-basis: 21%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 5px 20px 25px 20px;
+}
+
+.btn, .btn-longer {
+  background: var(--btn-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow:  0px 3px 0px var(--btn-shadow);
+  font-size: calc(.2rem + 4vmin);
+  color: var(--btn-btnlonger-color);
+}
+
+.delete, .reset{
+  background: var(--del-reset-btn-bg);
+  box-shadow:  0px 3px 0px var(--del-reset-btn-shadow);
+  color: var(--del-reset-btn-color);
+  font-size: calc(.2rem + 3vmin);
+}
+
+.equal{
+  background: var(--equal-btn-bg);
+  box-shadow:  0px 3px 0px var(--equal-btn-shadow);
+  color: var(--equal-btn-color);
+}
+
+ .btn:hover{
+  background: var(--btn-hover-bg);
+ }
+ .btn:active{
+  background: var(--btn-active-bg);
+ }
+ .delete:hover, .reset:hover{
+  background: var(--del-reset-btn-hover-bg);
+ }
+
+ .delete:active, .reset:active{
+  background: var(--del-reset-btn-active-bg);
+ }
+
+.equal:hover{
+  background: var(--equal-btn-hover-bg);
+}
+.equal:active{
+  background: var(--equal-btn-active-bg);
+}
+
+.attribution { 
+  font-size: calc(.2rem + 2vmin);
+  right: 5vh;
+  bottom: 2vh;
+  position: absolute;
+  text-align: center;
+}
+.attribution a { 
+  color: hsl(228, 35%, 66%); 
+}
